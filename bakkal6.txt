@@ -1,0 +1,49 @@
+create database bakkal6;
+ 
+ go
+ use bakkal6;
+ go 
+  create table bakkal6(
+  bakkal_id int primary key,
+  bakkal_adi nchar(10),
+  muster_ıd int ,
+  urun_id int ,
+  borc_id int,
+  kasa_id int ,
+  satislar_id int ,
+    )
+  create table musteri6(
+  muster_ıd int primary key ,
+  musteri_adi varchar(20),
+  )
+  create table stoklar6(
+  urun_id int primary key,
+  urun_fiyati smallmoney ,
+  urun_adi nchar(10) ,
+  urun_adedi int ,
+  urun_satıs_fiyati smallmoney,
+  )
+  create table borclar6(
+  borc_id int primary key,
+  borc_mikatari int ,
+  borc_adedi int 
+  )
+  create table toptancı6(
+  kasa_id int primary key,
+  kasa_ad varchar ,
+  kasa_adedi int ,
+  )
+  create table satıslar_alıslar6(
+  satislar_id int primary key,
+  urun_satislar smallmoney,
+  urun_alıslar smallmoney ,
+  musteri_id int ,
+
+  )
+
+
+  
+  
+     
+
+ 
